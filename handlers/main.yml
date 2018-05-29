@@ -1,0 +1,6 @@
+---
+# handlers file for v2ray
+- name: restart v2ray
+  service:
+    name: v2ray
+    state: restarted

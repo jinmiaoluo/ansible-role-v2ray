@@ -1,0 +1,22 @@
+---
+- name: install v2ray
+  shell: curl -L -s https://install.direct/go.sh | bash
+
+- name: download v2ray manage script
+  get_url:
+    url: https://install.direct/go.sh
+    dest: /usr/bin/v2ray/go.sh
+    mode: 0744
+
+- name: update v2ray
+  shell: /usr/bin/v2ray/go.sh update
+
+- name: upload template
+  template:
+    src: v2ray.j2
+    dest: /etc/v2ray/config.json
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+  - restart v2ray
