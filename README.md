@@ -1,11 +1,11 @@
 # README.md
 # Ansible Role: v2ray
 
-An Ansible role that installs v2ray latest on Ubuntu 18.04
+An Ansible role that install and upgrade v2ray powered by official bash scripts
 
 ## Requirements
 
-add your config.json to role template dir with name : v2ray.j2
+add your `config.json` to `files`  dir with name : `config.json`
 
 ## Role Variables
 
@@ -17,9 +17,18 @@ none
 
 ## Example Playbook
 
-    - hosts: proxy
-      roles:
-        - { role: jinmiaoluo.v2ray }
+```
+# use this role with root
+- hosts: proxy
+  roles:
+    - jinmiaoluo.v2ray
+```
+
+```
+# use this role with user non-root
+- hosts: proxy
+  roles:
+    - { role: jinmiaoluo.v2ray, become: yes }
 
 ## License
 
