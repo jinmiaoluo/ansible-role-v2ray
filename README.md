@@ -29,6 +29,7 @@ none
 - hosts: proxy
   roles:
     - { role: jinmiaoluo.v2ray, become: yes }
+```
 
 ## License
 
