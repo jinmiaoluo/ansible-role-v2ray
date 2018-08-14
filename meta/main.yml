@@ -2,28 +2,22 @@ galaxy_info:
   author: jinmiaoluo
   description: "install v2ray with your configuration"
   company: jinmiaoluo
-  license: license (BSD)
-  min_ansible_version: 2.6.2
+  license: "license (BSD)"
+  min_ansible_version: '2.0'
   platforms:
-  - name: ubuntu
+  - name: Ubuntu
     versions:
-    - 1804
-    - 1604
-    - 1404
-  - name: centos
+    - bionic
+    - xenial
+    - trusty
+  - name: EL
     versions:
     - 7
     - 6
-
   - name: debian
     versions:
-    - 7
-    - 8
-    - 9
-
-  - name: arm
-    versions:
-    - rpi3
+    - jessie
+    - stretch
 
   galaxy_tags: 
     - v2ray
