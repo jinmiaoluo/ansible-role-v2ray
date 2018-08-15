@@ -5,7 +5,7 @@
 
 - name: 'upload config.json'
   copy: 
-    src: '{{ role_path }}/files/config.json'
+    src: '{{ v2ray_config_file_path }}'
     dest: '/etc/v2ray/config.json'
     owner: root
     group: root
