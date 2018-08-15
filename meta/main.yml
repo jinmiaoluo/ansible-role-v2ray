@@ -1,8 +1,9 @@
 galaxy_info:
+  role_name: v2ray
   author: jinmiaoluo
   description: "install v2ray with your configuration"
-  company: jinmiaoluo
-  license: "license (BSD)"
+  company: 'Beansmile Inc.'
+  license: BSD
   min_ansible_version: '2.0'
   platforms:
   - name: Ubuntu
