@@ -1,4 +1,7 @@
 # README.md
+
+[![Join the chat at https://gitter.im/ansible-role-v2ray/Lobby](https://badges.gitter.im/ansible-role-v2ray/Lobby.svg)](https://gitter.im/ansible-role-v2ray/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # Ansible Role: v2ray
 
 An Ansible role that install and upgrade v2ray powered by official bash scripts
